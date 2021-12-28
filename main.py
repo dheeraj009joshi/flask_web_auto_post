@@ -61,4 +61,5 @@ def index():
 
 
     return render_template('home.html', form=forms,name=name,passw=passw,time=hours)
-app.run()
+if __name__ == '__main__': 
+    app.run(debug=True,host='0.0.0.0',port=8080)
